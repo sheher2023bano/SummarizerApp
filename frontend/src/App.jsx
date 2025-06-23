@@ -26,7 +26,7 @@ export default function TextSummarization() {
 
     setLoading(true);
     try {
-      const response = await fetch("${import.meta.env.VITE_API_URL}/generate", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/generate`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
